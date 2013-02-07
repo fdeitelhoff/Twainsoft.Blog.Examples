@@ -106,3 +106,19 @@ Generated_Code #added for RIA/Silverlight projects
 _UpgradeReport_Files/
 Backup*/
 UpgradeLog*.XML
+
+# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
+bin
+obj
+
+# mstest test results
+TestResults
+
+# Diverse Dateien/Verzeichnisse von Visual Studio und Erweiterungen.
+*_NCrunch_*
+packages
+Output
+*.DotSettings
+*.suo
+*.user
+*.sln.ide
