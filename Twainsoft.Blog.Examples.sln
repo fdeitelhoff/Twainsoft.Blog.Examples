@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EasierAppSettings", "EasierAppSettings", "{399596B6-66C8-406A-A0C6-15095AB18C1E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. EasierAppSettings", "1. EasierAppSettings", "{399596B6-66C8-406A-A0C6-15095AB18C1E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twainsoft.Blog.Examples.EasierAppSettings.Tests", "EasierAppSettings\Twainsoft.Blog.Examples.EasierAppSettings.Tests\Twainsoft.Blog.Examples.EasierAppSettings.Tests.csproj", "{879F38FA-B668-4629-B4DB-AF7A53F56F34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Localization", "2. Localization", "{2A76AFD4-2F55-4BB5-9F28-8BA647ACD93F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twainsoft.Blog.Examples.Localization.Tests", "Localization\Twainsoft.Blog.Examples.Localization.Tests\Twainsoft.Blog.Examples.Localization.Tests.csproj", "{57C624DA-D6AA-4686-B514-D76BCCEAAB1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twainsoft.Blog.Example.Localization", "Localization\Twainsoft.Blog.Example.Localization\Twainsoft.Blog.Example.Localization.csproj", "{B45BC81B-4406-44D7-AB1B-E661319734A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,11 +21,21 @@ Global
 		{879F38FA-B668-4629-B4DB-AF7A53F56F34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{879F38FA-B668-4629-B4DB-AF7A53F56F34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{879F38FA-B668-4629-B4DB-AF7A53F56F34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57C624DA-D6AA-4686-B514-D76BCCEAAB1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57C624DA-D6AA-4686-B514-D76BCCEAAB1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57C624DA-D6AA-4686-B514-D76BCCEAAB1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57C624DA-D6AA-4686-B514-D76BCCEAAB1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B45BC81B-4406-44D7-AB1B-E661319734A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B45BC81B-4406-44D7-AB1B-E661319734A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B45BC81B-4406-44D7-AB1B-E661319734A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B45BC81B-4406-44D7-AB1B-E661319734A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{879F38FA-B668-4629-B4DB-AF7A53F56F34} = {399596B6-66C8-406A-A0C6-15095AB18C1E}
+		{57C624DA-D6AA-4686-B514-D76BCCEAAB1E} = {2A76AFD4-2F55-4BB5-9F28-8BA647ACD93F}
+		{B45BC81B-4406-44D7-AB1B-E661319734A6} = {2A76AFD4-2F55-4BB5-9F28-8BA647ACD93F}
 	EndGlobalSection
 EndGlobal
