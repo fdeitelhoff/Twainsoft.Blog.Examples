@@ -16,7 +16,7 @@ namespace Twainsoft.Blog.Example.Localization
                 var upper = lowerCharacters.ToUpper(culture);
                 var lower = upperCharacters.ToLower(culture);
 
-                if (!upperCharacters.Equals(upper) || !lowerCharacters.Equals(lower))
+                if (upperCharacters != upper || lowerCharacters != lower)
                 {
                     Console.WriteLine(culture.Name);
                 }
