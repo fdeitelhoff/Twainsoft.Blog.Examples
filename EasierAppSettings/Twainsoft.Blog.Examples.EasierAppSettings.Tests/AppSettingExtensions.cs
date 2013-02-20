@@ -5,6 +5,11 @@ namespace Twainsoft.Blog.Examples.EasierAppSettings.Tests
 {
     public static class AppSettingExtensions
     {
+        /// <summary>
+        /// Returns an application setting as string for the given key.
+        /// </summary>
+        /// <param name="key">The key for the application setting.</param>
+        /// <returns></returns>
         public static string AppSetting(this string key)
         {
             var value = "";
@@ -17,6 +22,12 @@ namespace Twainsoft.Blog.Examples.EasierAppSettings.Tests
             return value;
         }
 
+        /// <summary>
+        /// Returns an application setting as user defined type for the given key.
+        /// </summary>
+        /// <typeparam name="T">The requested return type for the setting.</typeparam>
+        /// <param name="key">The key for the application setting.</param>
+        /// <returns></returns>
         public static T AppSetting<T>(this string key)
         {
             var value = default(T);
