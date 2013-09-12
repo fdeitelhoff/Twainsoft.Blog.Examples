@@ -1,4 +1,11 @@
-﻿using System;
+﻿// **************************************************
+// 
+// Written by Fabian Deitelhoff, 2013-09-12
+// http://www.fabiandeitelhoff.de
+// 
+// **************************************************
+
+using System;
 using System.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -12,7 +19,8 @@ namespace Twainsoft.Blog.Examples.EasierAppSettings.Tests
         {
             ConfigurationManager.AppSettings["StringSetting"] = "TestSetting.";
             ConfigurationManager.AppSettings["NumberSetting"] = "1254524";
-            ConfigurationManager.AppSettings["GuidSetting"] = Guid.Parse("fa1ab69a-0029-4738-9767-dcbcb0866039").ToString();
+            ConfigurationManager.AppSettings["GuidSetting"] =
+                Guid.Parse("fa1ab69a-0029-4738-9767-dcbcb0866039").ToString();
         }
 
         [TestMethod]

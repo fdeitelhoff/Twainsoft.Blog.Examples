@@ -1,11 +1,18 @@
-﻿using System;
+﻿// **************************************************
+// 
+// Written by Fabian Deitelhoff, 2013-09-12
+// http://www.fabiandeitelhoff.de
+// 
+// **************************************************
+
+using System;
 using System.Globalization;
 
 namespace Twainsoft.Blog.Example.Localization
 {
-    static class Program
+    internal static class Program
     {
-        static void Main()
+        private static void Main()
         {
             const string lowerCharacters = "abcdefghijklmnopqrstuvwxyz";
             const string upperCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

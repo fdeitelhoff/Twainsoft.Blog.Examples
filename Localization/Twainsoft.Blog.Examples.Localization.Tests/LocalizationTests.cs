@@ -1,4 +1,11 @@
-﻿using System.Globalization;
+﻿// **************************************************
+// 
+// Written by Fabian Deitelhoff, 2013-09-12
+// http://www.fabiandeitelhoff.de
+// 
+// **************************************************
+
+using System.Globalization;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Twainsoft.Blog.Examples.Localization.Tests
