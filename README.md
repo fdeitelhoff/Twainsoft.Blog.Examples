@@ -1,8 +1,9 @@
 Twainsoft.Blog.Examples
 =======================
 
-All examples from the blog of Twainsoft &amp; Fabian Deitelhoff (www.fabiandeitelhoff.de).
-The following examples are available (the links refer to the blog posts, that are mainly in german).
+All examples from the blog of Fabian Deitelhoff &amp; Twainsoft (www.fabiandeitelhoff.de).
+The following examples are available (the links refer to the blog posts, mainly in German).
 
 1. EasierAppSettings (http://www.fabiandeitelhoff.de/2013/02/erweiterungsmethoden-fur-appsettings/)
 2. Localization (http://www.fabiandeitelhoff.de/2013/02/lokalisierung-buchstabensalat/)
+3. LevenshteinDistance (http://www.fabiandeitelhoff.de/2013/09/nachtrag-dynamische-programmierung/)
