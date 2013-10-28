@@ -1,7 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.20623.1 VSUPREVIEW
+VisualStudioVersion = 12.0.20827.3
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. EasierAppSettings", "1. EasierAppSettings", "{399596B6-66C8-406A-A0C6-15095AB18C1E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twainsoft.Blog.Examples.EasierAppSettings.Tests", "EasierAppSettings\Twainsoft.Blog.Examples.EasierAppSettings.Tests\Twainsoft.Blog.Examples.EasierAppSettings.Tests.csproj", "{879F38FA-B668-4629-B4DB-AF7A53F56F34}"
@@ -15,6 +16,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. LevenshteinDistance", "3. LevenshteinDistance", "{FB5E3940-6CA3-43C5-A0B1-5B2574AFB3D0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twainsoft.Blog.Example.LevenshteinDistance", "LevenshteinDistance\Twainsoft.Blog.Example.LevenshteinDistance\Twainsoft.Blog.Example.LevenshteinDistance.csproj", "{183D1BA3-1402-4693-9167-EF7E234B7AD1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. ExcelLifeBook", "4. ExcelLifeBook", "{335F5AB8-C7D3-4DF5-ACAC-675B979E725C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twainsoft.Blog.Examples.ExcelLifeBook", "ExcelLifeBook\Twainsoft.Blog.Examples.ExcelLifeBook\Twainsoft.Blog.Examples.ExcelLifeBook.csproj", "{9B84BF45-0F6E-47CD-B202-115CF7A56E2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +43,10 @@ Global
 		{183D1BA3-1402-4693-9167-EF7E234B7AD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{183D1BA3-1402-4693-9167-EF7E234B7AD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{183D1BA3-1402-4693-9167-EF7E234B7AD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B84BF45-0F6E-47CD-B202-115CF7A56E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B84BF45-0F6E-47CD-B202-115CF7A56E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B84BF45-0F6E-47CD-B202-115CF7A56E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B84BF45-0F6E-47CD-B202-115CF7A56E2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,5 +56,6 @@ Global
 		{57C624DA-D6AA-4686-B514-D76BCCEAAB1E} = {2A76AFD4-2F55-4BB5-9F28-8BA647ACD93F}
 		{B45BC81B-4406-44D7-AB1B-E661319734A6} = {2A76AFD4-2F55-4BB5-9F28-8BA647ACD93F}
 		{183D1BA3-1402-4693-9167-EF7E234B7AD1} = {FB5E3940-6CA3-43C5-A0B1-5B2574AFB3D0}
+		{9B84BF45-0F6E-47CD-B202-115CF7A56E2B} = {335F5AB8-C7D3-4DF5-ACAC-675B979E725C}
 	EndGlobalSection
 EndGlobal
