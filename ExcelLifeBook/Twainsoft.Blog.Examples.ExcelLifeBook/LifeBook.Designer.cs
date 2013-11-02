@@ -9,7 +9,8 @@
 //------------------------------------------------------------------------------
 
 #pragma warning disable 414
-namespace Twainsoft.DNP.Articles.ExcelLifeBook {
+namespace Twainsoft.Blog.Examples.ExcelLifeBook
+{
     
     
     /// 
@@ -151,9 +152,9 @@ namespace Twainsoft.DNP.Articles.ExcelLifeBook {
     
     internal sealed partial class Globals {
         
-        private static LifeBook _LifeBook;
+        private static Blog.Examples.ExcelLifeBook.LifeBook _LifeBook;
         
-        internal static LifeBook LifeBook {
+        internal static Blog.Examples.ExcelLifeBook.LifeBook LifeBook {
             get {
                 return _LifeBook;
             }

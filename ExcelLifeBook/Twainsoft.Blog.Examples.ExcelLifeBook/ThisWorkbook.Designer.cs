@@ -9,7 +9,8 @@
 //------------------------------------------------------------------------------
 
 #pragma warning disable 414
-namespace Twainsoft.DNP.Articles.ExcelLifeBook {
+namespace Twainsoft.Blog.Examples.ExcelLifeBook
+{
     
     
     /// 
@@ -174,13 +175,13 @@ namespace Twainsoft.DNP.Articles.ExcelLifeBook {
         private Globals() {
         }
         
-        private static ThisWorkbook _ThisWorkbook;
+        private static Blog.Examples.ExcelLifeBook.ThisWorkbook _ThisWorkbook;
         
         private static global::Microsoft.Office.Tools.Excel.Factory _factory;
         
         private static ThisRibbonCollection _ThisRibbonCollection;
         
-        internal static ThisWorkbook ThisWorkbook {
+        internal static Blog.Examples.ExcelLifeBook.ThisWorkbook ThisWorkbook {
             get {
                 return _ThisWorkbook;
             }

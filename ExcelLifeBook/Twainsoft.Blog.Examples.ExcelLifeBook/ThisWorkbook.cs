@@ -1,16 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using System.Xml.Linq;
-using Microsoft.Office.Tools.Excel;
-using Microsoft.VisualStudio.Tools.Applications.Runtime;
-using Excel = Microsoft.Office.Interop.Excel;
-using Office = Microsoft.Office.Core;
-
-namespace Twainsoft.DNP.Articles.ExcelLifeBook
+﻿namespace Twainsoft.Blog.Examples.ExcelLifeBook
 {
     public partial class ThisWorkbook
     {
@@ -30,8 +18,8 @@ namespace Twainsoft.DNP.Articles.ExcelLifeBook
         /// </summary>
         private void InternalStartup()
         {
-            this.Startup += new System.EventHandler(ThisWorkbook_Startup);
-            this.Shutdown += new System.EventHandler(ThisWorkbook_Shutdown);
+            //this.Startup += new System.EventHandler(ThisWorkbook_Startup);
+            //this.Shutdown += new System.EventHandler(ThisWorkbook_Shutdown);
         }
 
         #endregion

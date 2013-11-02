@@ -1,4 +1,4 @@
-﻿namespace Twainsoft.DNP.Articles.ExcelLifeBook
+﻿namespace Twainsoft.Blog.Examples.ExcelLifeBook
 {
     partial class LifeBookRibbon : Microsoft.Office.Tools.Ribbon.RibbonBase
     {
