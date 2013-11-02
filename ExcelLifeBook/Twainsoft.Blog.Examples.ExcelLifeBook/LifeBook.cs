@@ -29,59 +29,6 @@ namespace Twainsoft.Blog.Examples.ExcelLifeBook
 
             // Mark the time of middle school.
             MarkMiddleSchool(10, 16);
-
-            MarkImportantDate(new DateTime(2014, 2, 15), Color.Purple, "Heute");
-            MarkImportantDate(new DateTime(1983, 2, 16), Color.Purple, "Geburt");
-            MarkImportantDate(new DateTime(2010, 6, 1), Color.DeepPink, "Umzug nach Dortmund.");
-            MarkImportantDate(new DateTime(2014, 2, 16), Color.Salmon, "31. Geburtstag");
-            MarkImportantDate(new DateTime(2043, 2, 16), Color.Salmon, "60. Geburtstag");
-            MarkImportantDate(new DateTime(1992, 2, 16), Color.Salmon, "9. Geburtstag");
-        }
-
-        private void MarkImportantDate(DateTime date, Color color, string message)
-        {
-            if (date.CompareTo(Birthday) < 0)
-            {
-                throw new ArgumentException("The current date must be later than the birtday!");
-            }
-
-            //var dayStart = date.Subtract(Birthday).Days;
-            
-            var years = date.Year - Birthday.Year;
-            var dayStart = years*365;
-
-            if (date.Month < Birthday.Month)
-            {
-                dayStart += (Birthday.Month - date.Month) * 30;
-            }
-            else
-            {
-                dayStart += (date.Month - Birthday.Month) * 30;
-            }
-
-            if (date.Day <= Birthday.Day)
-            {
-                dayStart += Birthday.Day - date.Day;
-                dayStart -= 30; // Subtract one month because we get an...
-            }
-            else
-            {
-                dayStart += date.Day - Birthday.Day;
-            }
-
-            var startRow = Math.Ceiling((dayStart / 170.0f));
-            var startColumn = dayStart % 170;
-
-            if (startRow <= 0)
-                startRow = 1;
-            if (startColumn <= 0)
-                startColumn = 1;
-
-            var cell = Cells[startRow, startColumn] as Range;
-            cell.Interior.Color = color;
-
-            var comment = cell.AddComment(message);
-            comment.Visible = true;
         }
 
         private void MarkMiddleSchool(int fromYear, int toYear)
@@ -136,7 +83,7 @@ namespace Twainsoft.Blog.Examples.ExcelLifeBook
                 {
                     var cell = Cells[row, column] as Range;
 
-                    cell.Value2 = "-";
+                    //cell.Value2 = "-";
 
                     if (cell != null && days % 365 == 0)
                     {
