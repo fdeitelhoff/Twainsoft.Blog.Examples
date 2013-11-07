@@ -6,12 +6,9 @@ namespace Twainsoft.Blog.Examples.ExcelLifeBook
 {
     public partial class LifeBook
     {
-        private DateTime Birthday { get; set; }
-
         public void CreateLifeBook()
         {
-            Birthday = new DateTime(1983, 2, 16);
-
+            // We assume 170 * 170 cells.
             const int rows = 170;
             const int columns = 170;
 
@@ -21,39 +18,25 @@ namespace Twainsoft.Blog.Examples.ExcelLifeBook
             // Calculate and mark all birthdays with green cells.
             CalculateBirthdays(rows, columns);
 
-            // Mark the kindergarden time.
+            // Mark all important time ranges (from -> to year).
             MarkKinderkarden(3, 6);
-
-            // Mark the elementary school time.
             MarkElementarySchool(6, 10);
-
-            // Mark the middle school time.
             MarkMiddleSchool(10, 16);
-
-            // Mark the high school time.
             MarkHighSchool(16, 20);
-
-            // Mark the apprenticeship time.
             MarkApprenticeship(20, 23);
-
-            // Mark the work time.
             MarkWork(23, 26);
-
-            // Mark the bachelor time.
             MarkBachelor(26, 29);
-
-            // Mark the master time.
             MarkMaster(29, 31);
         }
 
         private void MarkMaster(int fromYear, int toYear)
         {
-            MarkRange(fromYear, toYear, Color.Crimson);
+            MarkRange(fromYear, toYear, Color.Sienna);
         }
 
         private void MarkBachelor(int fromYear, int toYear)
         {
-            MarkRange(fromYear, toYear, Color.Orange);
+            MarkRange(fromYear, toYear, Color.Olive);
         }
 
         private void MarkWork(int fromYear, int toYear)
@@ -63,7 +46,7 @@ namespace Twainsoft.Blog.Examples.ExcelLifeBook
 
         private void MarkApprenticeship(int fromYear, int toYear)
         {
-            MarkRange(fromYear, toYear, Color.DarkMagenta);
+            MarkRange(fromYear, toYear, Color.Brown);
         }
 
         private void MarkHighSchool(int fromYear, int toYear)
@@ -123,8 +106,6 @@ namespace Twainsoft.Blog.Examples.ExcelLifeBook
                 {
                     var cell = Cells[row, column] as Range;
 
-                    //cell.Value2 = "-";
-
                     if (cell != null && days % 365 == 0)
                     {
                         cell.Interior.Color = Color.Green;
@@ -140,8 +121,14 @@ namespace Twainsoft.Blog.Examples.ExcelLifeBook
 
         private void ApplyFormatting(int rows, int columns)
         {
+            // Complete surrounding borders of the gray box. 
             Range[Cells[1, 1], Cells[rows, columns]].Interior.Color = Color.LightGray;
+            Range[Cells[1, 1], Cells[rows, columns]].Borders[XlBordersIndex.xlEdgeTop].LineStyle = XlLineStyle.xlContinuous;
+            Range[Cells[1, 1], Cells[rows, columns]].Borders[XlBordersIndex.xlEdgeLeft].LineStyle = XlLineStyle.xlContinuous;
+            Range[Cells[1, 1], Cells[rows, columns]].Borders[XlBordersIndex.xlEdgeBottom].LineStyle = XlLineStyle.xlContinuous;
+            Range[Cells[1, 1], Cells[rows, columns]].Borders[XlBordersIndex.xlEdgeRight].LineStyle = XlLineStyle.xlContinuous;
 
+            // Set all column width to 2.14. That's a nice looking width.
             for (var i = 1; i <= 170; i++)
             {
                 var column = Columns[i, System.Type.Missing] as Range;
