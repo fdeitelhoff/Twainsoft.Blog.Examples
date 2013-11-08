@@ -74,6 +74,7 @@ namespace Twainsoft.Blog.Examples.ExcelLifeBook
             var dayStart = fromYear*365;
             var dayEnd = toYear*365;
 
+            // Calculate the row and column of the starting cell for the range.
             var startRow = Math.Ceiling(dayStart/170.0f);
             var startColumn = dayStart%170;
 
